@@ -31,12 +31,13 @@ h2 {
   background-color: #fff3c4; /* 目にやさしい淡い背景 */
 }
 
+/* === チーズの穴背景 === */
 .cheese-bg {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 3000px; /* 長めにしておくとスクロールに対応 */
+  height: 200%;
   pointer-events: none;
   z-index: 0;
 }
@@ -62,6 +63,14 @@ h2 {
   width: 100px;
   height: 100px;
 }
+
+/* ランダム配置（必要に応じて増やせます） */
+.hole:nth-child(1) { top: 100px; left: 20%; }
+.hole:nth-child(2) { top: 200px; left: 50%; }
+.hole:nth-child(3) { top: 300px; left: 80%; }
+.hole:nth-child(4) { top: 500px; left: 30%; }
+.hole:nth-child(5) { top: 600px; left: 60%; }
+.hole:nth-child(6) { top: 800px; left: 10%; }
 
 .main-image {
   width: 100%;
