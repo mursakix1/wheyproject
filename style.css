@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: sans-serif;
-  padding-bottom: 60px; /* フッター分のスペース確保 */
+  padding-bottom: 100px; /* フッター分のスペース確保 */
   scroll-behavior: smooth;
   background-color: #fee59f;
   overflow-x: hidden;
@@ -9,7 +9,7 @@ body {
 }
 
 main {
-  padding: 20px;
+  padding: 100px 20px 20px;
 }
 
 section {
@@ -22,13 +22,19 @@ h2 {
 }
 
 .page-title {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   text-align: center;
   font-size: 2em;
   font-weight: bold;
-  margin: 20px 0;
-  padding: 10px 0;
+  padding: 15px 0;
+  margin: 0;
   color: #333;
-  background-color: #fff3c4; /* 目にやさしい淡い背景 */
+  background-color: #fff3c4;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* === チーズの穴背景 === */
@@ -122,9 +128,10 @@ footer {
   left: 0;
   width: 100%;
   background-color: #eee;
-  border-top: 1px solid #ccc;
-  height: 50px;
+  border-top: 2px solid #ccc;
+  height: 80px; /* ← 高さUP！ */
   z-index: 999;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .bottom-nav {
@@ -132,6 +139,7 @@ footer {
   justify-content: space-around;
   align-items: center;
   height: 100%;
+  font-size: 1.2em; /* ← テキストも少し大きく！ */
 }
 
 .bottom-nav a {
