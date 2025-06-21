@@ -3,6 +3,7 @@ body {
   font-family: sans-serif;
   padding-bottom: 60px; /* フッター分のスペース確保 */
   scroll-behavior: smooth;
+  background-color: #ffdc7a;
 }
 
 main {
