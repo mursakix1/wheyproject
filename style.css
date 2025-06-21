@@ -4,6 +4,8 @@ body {
   padding-bottom: 60px; /* フッター分のスペース確保 */
   scroll-behavior: smooth;
   background-color: #fee59f;
+  overflow-x: hidden;
+  position: relative;
 }
 
 main {
@@ -28,6 +30,47 @@ h2 {
   color: #333;
   background-color: #fff3c4; /* 目にやさしい淡い背景 */
 }
+
+/* === チーズの穴背景 === */
+.cheese-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hole {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #f0c33c;
+  opacity: 0.5;
+}
+
+.hole.small {
+  width: 30px;
+  height: 30px;
+}
+
+.hole.medium {
+  width: 60px;
+  height: 60px;
+}
+
+.hole.large {
+  width: 100px;
+  height: 100px;
+}
+
+/* ランダム配置（必要に応じて増やせます） */
+.hole:nth-child(1) { top: 100px; left: 20%; }
+.hole:nth-child(2) { top: 200px; left: 50%; }
+.hole:nth-child(3) { top: 300px; left: 80%; }
+.hole:nth-child(4) { top: 500px; left: 30%; }
+.hole:nth-child(5) { top: 600px; left: 60%; }
+.hole:nth-child(6) { top: 800px; left: 10%; }
 
 .main-image {
   width: 100%;
@@ -54,13 +97,22 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  padding-bottom: 20px;
 }
 
 .recipe-card {
-  padding: 15px;
   border: 1px solid #ccc;
   border-radius: 10px;
+  padding: 15px;
   background-color: #f9f9f9;
+  text-align: center;
+}
+
+.recipe-img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 
 /* 下部ナビゲーション */
@@ -90,26 +142,4 @@ footer {
 
 .bottom-nav a:hover {
   color: #00aaff;
-}
-
-.recipe-list {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding-bottom: 20px;
-}
-
-.recipe-card {
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  padding: 15px;
-  background-color: #f9f9f9;
-  text-align: center;
-}
-
-.recipe-img {
-  width: 100%;
-  max-width: 300px;
-  border-radius: 10px;
-  margin-bottom: 10px;
 }
