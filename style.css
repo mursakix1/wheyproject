@@ -1,44 +1,47 @@
+/* 全体レイアウト */
 body {
   margin: 0;
   font-family: "Arial", sans-serif;
-  display: flex;
 }
 
-nav {
-  width: 200px;
+/* ヘッダーとナビ */
+header {
   background-color: #f5f5f5;
-  padding: 20px;
-  height: 100vh;
-  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
-  position: fixed;
-  top: 0;
-  left: 0;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-nav h1 {
+header h1 {
+  margin: 0;
   font-size: 20px;
-  margin-bottom: 30px;
   text-align: center;
+  margin-bottom: 10px;
+}
+
+/* ナビリンク */
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
 nav a {
-  display: block;
-  margin: 15px 0;
   text-decoration: none;
   color: #333;
   font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
 }
 
 nav a:hover {
-  color: #00aaff;
+  background-color: #e0f7ff;
+  color: #0077aa;
 }
 
+/* メインコンテンツ */
 main {
-  margin-left: 220px;
-  padding: 30px;
-  flex-grow: 1;
+  padding: 20px;
 }
 
-h2 {
-  margin-top: 0;
-}
+/* スマホ対応（自動で折り返しされるので特別な対応不要） */
