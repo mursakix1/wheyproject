@@ -5,6 +5,6 @@ window.addEventListener('scroll', () => {
 
   holes.forEach(hole => {
     const speed = parseFloat(hole.dataset.speed);
-    hole.style.transform = `translateY(${scrollY * speed}px)`;
+    hole.style.transform = `translateY(${-scrollY * speed}px)`; // ← ここをマイナスに！
   });
 });
