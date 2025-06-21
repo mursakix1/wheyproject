@@ -1,25 +1,53 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>ホエイ情報局｜ホーム</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ホエイ情報局｜トップ</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>ホエイ情報局</h1>
-    <nav>
-      <a href="index.html">ホーム</a>
-      <a href="what-is-whey.html">ホエイとは</a>
-      <a href="uses.html">ホエイの活用</a>
-      <a href="news.html">ニュース</a>
-    </nav>
-  </header>
 
   <main>
-    <h2>ホーム</h2>
-    <p>ようこそ、ホエイ情報局へ！ここではホエイに関するあらゆる情報をお届けします。</p>
+    <!-- 1. 今ホエイが話題に！？ -->
+    <section id="headline">
+      <h2>今ホエイが話題に！？</h2>
+      <p>SNSや健康業界で、今ホエイが大注目されています。その理由をこれから深掘りしていきます！</p>
+    </section>
+
+    <!-- 2. ホエイについて -->
+    <section id="about-whey">
+      <h2>ホエイについて</h2>
+      <img src="images/whey.jpg" alt="ホエイの写真" class="main-image" />
+      <div class="details">
+        <p>ホエイとは、ヨーグルトやチーズの製造過程でできる液体成分で、乳清とも呼ばれています。たんぱく質、ミネラル、ビタミンが豊富で、プロテインやスキンケア製品などにも使われています。</p>
+      </div>
+    </section>
+
+    <!-- 3. 栄養価高い！ホエイ活用レシピ -->
+    <section id="recipes">
+      <h2>栄養価高い！ホエイ活用レシピ</h2>
+      <div class="recipe-gallery">
+        <a href="recipes.html"><img src="images/recipe1.jpg" alt="ホエイレシピ1" /></a>
+        <a href="recipes.html"><img src="images/recipe2.jpg" alt="ホエイレシピ2" /></a>
+      </div>
+    </section>
+
+    <!-- 4. 私たちについて -->
+    <section id="about-us">
+      <h2>私たちについて</h2>
+      <p>私たちはホエイの魅力とその活用方法をより多くの人に知ってもらいたいと考えています。シンプルだけど栄養豊富なホエイの世界を一緒に広めていきましょう！</p>
+    </section>
   </main>
+
+  <!-- フッター：下固定ナビゲーション -->
+  <footer>
+    <nav class="bottom-nav">
+      <a href="#about-whey">トップ</a>
+      <a href="recipes.html">レシピ</a>
+      <a href="#about-us">私たちについて</a>
+    </nav>
+  </footer>
+
 </body>
 </html>
