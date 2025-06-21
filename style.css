@@ -19,6 +19,16 @@ h2 {
   margin-bottom: 10px;
 }
 
+.page-title {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  margin: 20px 0;
+  padding: 10px 0;
+  color: #333;
+  background-color: #fff3c4; /* 目にやさしい淡い背景 */
+}
+
 .main-image {
   width: 100%;
   max-width: 600px;
